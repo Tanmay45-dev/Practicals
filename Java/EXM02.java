@@ -1,25 +1,26 @@
 class base
 {
-void display()
-{
-System.out.println("This Is base Class");
-}
-}
-class derived extends base
-{
-void display()
-{
-super.display();
-System.out.println("This Is derived Class");
-}
+int a;
 }
 
-class ABC
+class derived extends base
+{
+int a;
+
+void display()
+{
+a=10;
+super.a=5;
+
+System.out.println("a="+a);
+System.out.println("Super.a="+super.a);
+}
+}
+class EXM02
 {
 public static void main(String[]args)
 {
 derived obj=new derived();
-
 obj.display();
 }
 }

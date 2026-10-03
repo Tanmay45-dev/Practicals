@@ -2,7 +2,7 @@ class base
 {
 void display()
 {
-System.out.println("This Is base Class");
+print("Base class method");
 }
 }
 class derived extends base
@@ -10,16 +10,14 @@ class derived extends base
 void display()
 {
 super.display();
-System.out.println("This Is derived Class");
+print("Derived class method");
 }
 }
 
-class ABC
+class EXM01
 {
 public static void main(String[]args)
 {
 derived obj=new derived();
-
 obj.display();
-}
 }
